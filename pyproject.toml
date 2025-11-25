@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tee-ray"
+version = "0.0.1"
+description = "TEE-Ray is a Ray-compatible secure orchestration layer that routes distributed ML tasks and data access through Trusted Execution Environments (TEEs)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [
+  { name = "Xi Chen" }
+]
+
+dependencies = [
+  "ray>=2.10.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
